@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  background: url('https://banobagi.vn/wp-content/uploads/2025/05/gai-anime-mac-bikini-12.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+  color: cyan;
+  overflow-x: hidden;
+}
+/* Các class khác */
+.container { padding: 20px; position: relative; }
+.fps {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
+.title-left {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  font-size: 22px;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+  animation: fadeSlide 3s ease-out forwards;
+  opacity: 0;
+}
+@keyframes fadeSlide {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.logo-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid cyan;
+  box-shadow: 0 0 20px cyan, 0 0 40px #0ff;
+  background: white;
+  object-fit: cover;
+  animation: shake 4s infinite;
+  z-index: 10;
+}
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+}
+/* Các class khác như neon-btn, links, dot, music-controls ... sẽ được giữ nguyên từ phần CSS gốc */

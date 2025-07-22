@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VUONG PROFILE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="fps">FPS: 99.9</div>
+    <h1 class="title-left">VUONG TRUM MAI DAM</h1>
+    <img src="https://cdn.discordapp.com/attachments/1266182121047986342/1397051452354199603/IMG_1749973203749_1749973241894.jpg" alt="Logo" class="logo-right" />
+
+    <div class="profile">
+      <button class="neon-btn">Dịch vụ</button>
+      <button class="neon-btn">CHAT SEX - CALL DAM</button>
+      <div class="links">
+        <button onclick="window.open('https://www.facebook.com/nguyen.hung.vuong.759003', '_blank')">FACEBOOK</button>
+        <button onclick="window.open('https://zalo.me/081603870', '_blank')">ZALO</button>
+        <button onclick="window.open('https://www.tiktok.com/@metagaya1?_t=ZS-8yEEZqJyhur&_r=1', '_blank')">TIKTOK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="music-controls">
+    <button class="music-btn" onclick="toggleMusic()">Phát nhạc</button>
+    <button class="music-btn" onclick="nextTrack()">Next bài</button>
+    <div class="song-title" id="song-title">🎵 Đang phát: Bài 1 - Trú Mưa</div>
+  </div>
+
+  <audio id="bg-music" preload="auto">
+    <source id="audio-source" src="https://media.vocaroo.com/mp3/16cxaqpVQIn3" type="audio/mp3">
+    Trình duyệt của bạn không hỗ trợ phát nhạc.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
